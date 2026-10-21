@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Alex Morgan – Resume</title>
+<style>
+  :root { --ink:#1f2933; --muted:#52606d; --accent:#1d4e89; --rule:#cbd2d9; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:#f0f2f5; color:var(--ink); font-family:Georgia,"Times New Roman",serif; line-height:1.45; }
+  .page { max-width:8.5in; margin:24px auto; padding:0.6in 0.7in; background:#fff; box-shadow:0 2px 12px rgba(0,0,0,.12); }
+  header { text-align:center; margin-bottom:18px; }
+  h1 { margin:0 0 6px; font-size:28px; letter-spacing:3px; color:var(--accent); }
+  .contact { font-size:13px; color:var(--muted); }
+  .contact a { color:var(--muted); text-decoration:none; }
+  .contact a:hover { text-decoration:underline; }
+  .contact span + span::before { content:"|"; margin:0 8px; color:var(--rule); }
+  h2 { font-size:14px; letter-spacing:1.5px; text-transform:uppercase; color:var(--accent); border-bottom:1.5px solid var(--rule); padding-bottom:3px; margin:20px 0 8px; }
+  p { margin:0; font-size:14px; }
+  ul { margin:4px 0 0; padding-left:20px; font-size:14px; }
+  li { margin-bottom:3px; }
+  .skills { list-style:none; padding:0; }
+  .skills li { margin-bottom:2px; }
+  .job { margin-bottom:12px; }
+  .job-head { display:flex; justify-content:space-between; flex-wrap:wrap; gap:4px 16px; font-size:14px; }
+  .job-head .role { font-weight:bold; }
+  .job-head .co { color:var(--muted); }
+  .job-head .date { color:var(--muted); font-style:italic; }
+  .edu { display:flex; justify-content:space-between; flex-wrap:wrap; font-size:14px; }
+  @media print {
+    body { background:#fff; }
+    .page { margin:0; box-shadow:none; padding:0; max-width:none; }
+    @page { margin:0.6in; }
+  }
+  @media (max-width:600px) { .page { margin:0; padding:24px 18px; } .contact span { display:block; } .contact span + span::before { content:none; } }
+</style>
+</head>
+<body>
+<div class="page">
+  <header>
+    <h1>ALEX MORGAN</h1>
+    <div class="contact">
+      <span>San Francisco, CA</span><span>(123) 456-7890</span><span><a href="mailto:alex.morgan@email.com">alex.morgan@email.com</a></span><span><a href="https://linkedin.com/in/alexmorgan">linkedin.com/in/alexmorgan</a></span><span><a href="https://github.com/alexmorgan">github.com/alexmorgan</a></span>
+    </div>
+  </header>
+
+  <section>
+    <h2>Professional Summary</h2>
+    <p>Detail-oriented Software Engineer in Test with over 4 years of experience designing, building, and executing automated test frameworks for web applications and APIs. Proven track record of improving test coverage by 25% and reducing regression cycles through efficient CI/CD integrations. Skilled in Agile methodologies and cross-functional collaboration with development and product teams to deliver high-quality software.</p>
+  </section>
+
+  <section>
+    <h2>Technical Skills</h2>
+    <ul class="skills">
+      <li><strong>Languages:</strong> Python, Java, SQL, JavaScript</li>
+      <li><strong>Automation Frameworks:</strong> Selenium WebDriver, Pytest, TestNG</li>
+      <li><strong>API Testing:</strong> Postman, REST Assured</li>
+      <li><strong>DevOps &amp; Tools:</strong> Jenkins, Git, Docker, Jira, AWS</li>
+      <li><strong>Testing Methodologies:</strong> Regression, Functional, Integration, Smoke, CI/CD pipeline automation</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Professional Experience</h2>
+    <div class="job">
+      <div class="job-head">
+        <div><span class="role">Software Engineer in Test</span> | <span class="co">TechSolutions Inc.</span></div>
+        <div class="date">January 2024 – Present</div>
+      </div>
+      <ul>
+        <li>Designed and maintained an automated regression test suite using Python and Pytest, cutting manual testing time by 40%.</li>
+        <li>Developed and executed 150+ API integration tests using Postman, catching critical bugs prior to production releases.</li>
+        <li>Integrated automated test scripts into the Jenkins CI/CD pipeline, ensuring automatic triggers and zero-delay failure reporting.</li>
+        <li>Collaborated closely with 5 developers during Agile sprints to triage defects, map user stories to test cases, and unblock releases.</li>
+      </ul>
+    </div>
+    <div class="job">
+      <div class="job-head">
+        <div><span class="role">QA Automation Engineer</span> | <span class="co">Innovate Web Apps</span></div>
+        <div class="date">June 2022 – December 2023</div>
+      </div>
+      <ul>
+        <li>Built cross-browser UI automation frameworks from scratch using Java and Selenium WebDriver.</li>
+        <li>Authored and executed 300+ manual and automated test cases, boosting overall product test coverage by 25%.</li>
+        <li>Identified, documented, and tracked 100+ software defects in Jira, verifying hotfixes before deployment.</li>
+        <li>Managed test data setups and validated database integrity using SQL queries.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <div class="edu">
+      <div><strong>Bachelor of Science in Computer Science</strong> | State University</div>
+      <div style="color:var(--muted);font-style:italic;">Graduated: May 2022</div>
+    </div>
+  </section>
+</div>
+</body>
+</html>
